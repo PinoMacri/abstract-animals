@@ -13,11 +13,13 @@ public class Main {
 		Animale[] animale = { c, p, a, d };
 		Nuotare[] nuotoArr = { c, d };
 		Volare[] voloArr = { a, p };
-		System.out.println("Versi degli animali:");
+		System.out.println("Animali:");
 		for (int i = 0; i < animale.length; i++) {
 		    Animale an = animale[i];
 		    System.out.println(an.toString() + ":");
-		    an.verso();
+		    System.out.print("Il suo Verso è: ");an.verso();
+		    System.out.print("Mentre Dorme fa: ");an.dormi();
+		    System.out.print("E Mangia: ");an.mangia();
 		}
 		System.out.println("-----------------------------------");
 		System.out.println("Animali che Nuotano:");
